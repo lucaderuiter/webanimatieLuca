@@ -1,0 +1,256 @@
+html { font-size:90%; }
+
+/*https://dzone.com/articles/using-csshtml-make-responsive*/
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.3rem;} } 
+@media (min-width:1100px) { body {font-size:1.7rem;} }
+
+
+
+.regel1 {
+    position: absolute;
+    font-family: "LCD solid";
+    font-style: normal;
+    font-size: 2.2em;
+    color: white;
+    transform: translate(25px, -1px);
+    transition: transform .2s;
+}
+
+.regel2 {
+    position: absolute;
+    font-family: "LCD solid";
+    font-style: normal;
+    font-size: 2.0em;
+    color: white;
+    transform: translate(25px, 101px); 
+    transition: transform .2s;
+}
+
+.regel1:hover {
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+.regel1:hover {
+    background-color: #00ffa0; 
+}
+
+.regel2:hover {
+    transform: translate(50px, 101px);
+    transition: 0.3s;
+    font-size: 2.1em;
+}
+
+.regel2:hover { 
+    background-color: #ff9b00;
+}
+
+.background {
+    position: absolute;
+    background-color: black;
+    padding: 50% 50%; 
+}
+
+svg {
+    position: absolute;
+}
+
+svg#letters > rect#_v-blok_ {
+    top:0;
+    transform: translate(0em, 0em);
+}
+
+.night {
+    background-color: black; 
+}
+
+.green {
+    fill: #00ffa0;
+}
+
+.purple {
+    fill: #fc00ff;
+}
+
+.orange {
+    fill: #ff9b00;
+}
+
+.day {
+    background-color: white; 
+}
+
+.random {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+.regel1 {
+    animation: kleur 10s ease-in-out infinite;
+}
+
+@keyframes kleur {
+    0%{
+        color: white;
+    }
+    
+    50% {
+        color: #fc00ff;
+    }
+    100% {
+       color: white;
+    }
+    
+}
+
+.regel2 {
+    animation: kleur2 10s ease-in-out infinite;
+}
+
+@keyframes kleur2 {
+    0%{
+        color: white;
+    }
+    
+    50% {
+        color: #00ffa0;
+    }
+    100% {
+       color: white;
+    }
+    
+}
+
+.cls-1 {
+       animation: beweeg 15s ease-in-out infinite;
+}
+
+@keyframes beweeg {
+10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.cls-2 {
+       animation: beweeg2 15s ease-in-out infinite;
+}
+
+@keyframes beweeg2 {
+10%, 90% {
+    transform: translate3d(4px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(-1px, 0, 0);
+  }
+}
+
+#_v-begin_:hover, #_o-begin_:hover, #_r-begin_:hover, #_m-begin_:hover, #_m-midden_:hover, #_m-eind_:hover, #_o-eind_:hover, #_v-eind_:hover, #_g-begin_:hover, #_g-eind_:hover, #_e-zijkant_:hover, #_e-zijkant2_:hover, #_v-begin2_:hover, #_v-eind2_:hover, #_r-onder2_:hover, #_s-midden_:hover {
+    animation: kleuren 1s ease-in-out infinite;
+}
+
+@keyframes kleuren {
+    0% {
+        fill: black;
+    }
+    
+    40% {
+        fill: #FDF200;
+    }
+    
+    100% {
+        fill: black;
+    }
+}
+
+
+
+#_o-onder_:hover, #_o-boven_:hover, #_r-boven_:hover, #_m-boven_:hover, #_m-boven2_:hover, #_g-boven_:hover, #_g-midden_:hover, #_g-onder_:hover, #_e-boven_:hover, #_e-midden_:hover, #_e-onder_:hover, #_e-boven2_:hover, #_e-onder2_:hover, #_e-onder2:hover, #_r-boven2_:hover, #_s-boven_:hover, #_S-onder_:hover {
+    animation: beweeg3 1s ease-in-out infinite;
+}
+
+@keyframes beweeg3 {
+    10%, 90% {
+    transform: translate3d(4px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(-2px, 0, 0);
+  }
+}
+
+#_v-blok_:hover, #_v-blokk_:hover, #_e-blok_:hover, #_v-blok2_:hover, #_v-blokk2_:hover, #_e-blok2_:hover, #_s-blokboven_:hover, #_s-blokonder_:hover {
+    animation: dichtbij 4s ease-in-out infinite;
+    transition: transform;
+}
+
+@keyframes dichtbij {
+    100% {
+        transform:scale(0.5);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
